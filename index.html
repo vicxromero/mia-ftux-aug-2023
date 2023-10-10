@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victoria Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Red+Hat+Display&display=swap" 
+    rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Header - Start -->
-    <header>
-        <img src="https://source.unsplash.com/random/80x80/?logo,donut/" alt="">
+    <header class="container">
+        <img src="https://source.unsplash.com/random/80x80/?logo,donut/" alt="" class="img-feat">
         <nav>
             <a href="#"> Portfolio</a>
             <a href="#">About Me</a>
@@ -20,31 +28,32 @@
     <!-- Header - End -->
 
     <!-- Hero - Start -->
-    <section>
+    <section class="container" id="hero">
         <h1> Hi I'm Victoria</h1>
         <img 
          src="https://source.unsplash.com/random/400x400/?portrait/" 
-         alt=""
+         alt="" class="img-feat"
          />
     </section>
     <!-- Hero - End -->
 
 
     <!-- Features - Start -->
-    <section>
+    <section id="features">
         <h2>Features</h2>
 
+    <div class="container">
         <!-- Feature 1 - Start -->
         <div>
-        <img src="https://source.unsplash.com/random/120x120/?food/" alt="">
-        <h4>Feature 1</h4>
+            <img src="https://source.unsplash.com/random/120x120/?food/" alt="" class="img-feat">
+            <h4>Feature 1</h4>
         </div>
         <!-- Feature 1 - End -->
 
 
         <!-- Feature 2 - Start -->
         <div>
-            <img src="https://source.unsplash.com/random/120x120/?food/" alt="">
+            <img src="https://source.unsplash.com/random/120x120/?food/" alt="" class="img-feat">
             <h4>Feature 2</h4>
         </div>
          <!-- Feature 2 - End -->
@@ -52,22 +61,22 @@
 
         <!-- Feature 3 - Start -->
         <div>
-            <img src="https://source.unsplash.com/random/120x120/?food/" alt="">
+            <img src="https://source.unsplash.com/random/120x120/?food/" alt="" class="img-feat">
             <h4>Feature 3</h4>
         </div>
         <!-- Feature 3 - End -->
-
+    </div>
     </section>
     <!-- Features - End -->
 
-
     <!-- News - Start -->
-    <section>
+    <section id="news">
         <h2>Latest News</h2>
         
+        <div class="container">
         <!-- News 1 - Start -->
         <div>
-            <img src="https://source.unsplash.com/random/240x120/?ux,wireframe/" alt="" />
+            <img src="https://source.unsplash.com/random/240x120/?ux,wireframe/" alt="" class="img-feat"/>
             <h3>Title</h3>
             <a href="#">Read More</a>
         </div>
@@ -75,7 +84,7 @@
 
         <!-- News 2 - Start -->
         <div>
-            <img src="https://source.unsplash.com/random/240x120/?ux,wireframe/" alt="" />
+            <img src="https://source.unsplash.com/random/240x120/?ux,wireframe/" alt="" class="img-feat"/>
             <h3>Title</h3>
             <a href="#">Read More</a>
         </div>
@@ -83,26 +92,47 @@
 
         <!-- News 3 - Start -->
         <div>
-            <img src="https://source.unsplash.com/random/240x120/?ux,wireframe/" alt="" />
+            <img src="https://source.unsplash.com/random/240x120/?ux,wireframe/" alt="" class="img-feat" />
             <h3>Title</h3>
             <a href="#">Read More</a>
         </div>
         <!-- News 3 - End -->
+        </div>
     </section>
     <!-- News - End -->
 
     <!-- Contact - Start -->
-    <section>
-        <h2>Contact</h2>
-        <p>Address</p>
-        <p>Phone</p>
+    <section class="container" id="contact">
+        <div>
+            <h2>Contact</h2>
+            <p>Address</p>
+            <p>Phone</p>
+        </div>
+        <div>
+            <form action="#">
+                <label for="fullname">Name</label><br />
+                <input type="text" id="fullname" placeholder="Bruce Wayne"/>
 
-        <form action="">name email message send button </form>
+                <br /><br /> 
+
+                <label for="email">Email</label><br />
+                <input type="email" id="email" placeholder="bruce@batman.com" />
+            
+                <br /><br /> 
+
+                <label for="message">Message</label><br />
+                <textarea id="message" placeholder="Write a message"></textarea>
+
+                <br /><br /> 
+
+                <input type="submit" value="Send Message" />
+            </form>
+        </div>
     </section>
     <!-- Contact - End -->
 
     <!-- Footer - Start -->
-        <footer>
+        <footer class="container">
         <h4>Follow Me</h4>
         linkedin instagram x
         </footer>
