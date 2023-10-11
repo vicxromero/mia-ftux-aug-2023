@@ -3,9 +3,13 @@
 }
 
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Serif Display', serif;
     margin: 10px 0;
+}
+
+body{
+    margin: 0 auto;
 }
 
 h1 {
@@ -38,13 +42,12 @@ h6{
     font-size: 1.25rem;
 }
 
-p{
-    font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
-}
 
 section {
-    border: 1px coral solid;
+    /* border: 1px coral solid; */
+    /* height: 50vh; */
+    align-items: center;
+    padding: 64px;
 }
 
 .container {
@@ -57,14 +60,24 @@ header {
     padding: 16px;
 }
 
+footer{
+    height: 30vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
 #hero{
     background-color: #F1F1F1;
     justify-content: space-around;
     align-items: center;
+    height: 80vh;
 }
 
 #features {
     text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: beige;
 }
 
 #features div {
@@ -76,6 +89,7 @@ header {
 
 #news {
     text-align: center;
+    background-color: #F1F1F1;
 }
 
 #news div {
@@ -84,4 +98,109 @@ header {
 
 #contact {
     justify-content: space-around;
+    background-color: beige;
+    padding: 48px;
+    align-items: flex-start;
+}
+
+i {
+    font-size: 24px;
+}
+
+/* Links */
+a:link, a:visited {
+    text-decoration: none;
+    color: darkgrey;
+    padding: 8px ;
+
+}
+
+a:hover {
+    color: rgb(55, 55, 55);
+    background-color: #F1F1F1;
+    border-radius: 40px;
+}
+
+a:active{
+    color: rgb(55, 55, 55);
+    background-color: #F1F1F1
+}
+
+/* Forms */
+input {
+    /* width: 80%; */
+    box-sizing: border-box;
+    width: 320px;
+    padding: 16px 24px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    font-size: large;
+}
+
+input:focus, textarea:focus {
+    background-color: rgb(221, 221, 121);
+    outline: 0;
+}
+
+textarea {
+    width: 320px;
+    box-sizing: border-box;
+    height: 150px; 
+    padding: 16px 24px;
+    font-size: large;
+    margin: 8px 0; 
+    border-radius: 5px;
+}
+
+input[type='submit'] {
+    width: 320px;
+    border: none;
+    background-color: #ffc8c8;
+    color: lightcoral;
+    cursor: pointer;
+}
+
+/* CV BUTTON */
+a.cv-button:link, a.cv-button:visited {
+    background-color: lightcoral;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 16px;
+}
+
+a.cv-button:hover {
+    background-color: coral;
+}
+
+a.cv-button:active {
+    background-color: rgb(252, 112, 61);
+}
+
+/* CTA-BUTTON */
+a.cta-button {
+    color: white;
+    background-color: lightcoral;
+    border: 3px solid rgb(174, 93, 93);
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0 rgb(174, 93, 93);
+    border-radius: 100px;
+}
+
+/* Tablet View */
+@media only screen and (min-width: 680px) and (max-width: 767px){
+    #hero {
+    background-color: #F1F1F1;
+    }
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 679px) {
+    #hero {
+        background-color: #F1F1F1;
+        flex-direction: column;
+    }
+    #contact {
+        flex-direction: column;
+    }
 }

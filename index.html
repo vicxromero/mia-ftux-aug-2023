@@ -7,10 +7,15 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Red+Hat+Display&display=swap" 
-    rel="stylesheet">
+    rel="stylesheet"/>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" 
+    rel="stylesheet"/>
 
 </head>
 
@@ -22,14 +27,17 @@
             <a href="#"> Portfolio</a>
             <a href="#">About Me</a>
             <a href="#">Contact</a>
-            <a href="#">Download CV</a>
+            <a href="#" class="cv-button">Download CV</a>
         </nav>
     </header>
     <!-- Header - End -->
 
     <!-- Hero - Start -->
     <section class="container" id="hero">
-        <h1> Hi I'm Victoria</h1>
+        <div>
+            <h1> Hi I'm Victoria</h1>
+            <a href="#" class="cta-button">My Projects</a>
+         </div>
         <img 
          src="https://source.unsplash.com/random/400x400/?portrait/" 
          alt="" class="img-feat"
@@ -39,7 +47,7 @@
 
 
     <!-- Features - Start -->
-    <section id="features">
+    <section id="features" class="container">
         <h2>Features</h2>
 
     <div class="container">
@@ -105,8 +113,8 @@
     <section class="container" id="contact">
         <div>
             <h2>Contact</h2>
-            <p>Address</p>
-            <p>Phone</p>
+            <p><a href="tel:+17869308837"> Click to Contact</a></p>
+            <p><a href="mailto:victoriaromero0211@gmail.com">Email Me</a></p>
         </div>
         <div>
             <form action="#">
@@ -134,7 +142,14 @@
     <!-- Footer - Start -->
         <footer class="container">
         <h4>Follow Me</h4>
-        linkedin instagram x
+            <div calss="icons">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="ri-linkedin-fill"></i></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="ri-instagram-fill"></i></a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <i class="ri-twitter-x-line"></i></a>
+            </div>
         </footer>
     <!-- Footer - End -->
 
